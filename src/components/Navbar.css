@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #FFFDD0 0%, #8A2BE2 100%);
+  padding: 10px 20px;
+  position: sticky;
+  height: 80px;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.logo a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  /* color: #ffffff; */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: 60px;
+  border-radius: 50%;
+  /* Makes it circular */
+  object-fit: cover;
+  /* Keeps image inside the circle */
+}
+
+.brand-name {
+  margin-top: -2px;
+  margin-left: -5px;
+  font-size: 1.9rem;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* color: #2a00a2; */
+  /* background: linear-gradient(to right, #ff0000, #ff7300); */
+  color: #3000a3;
+  /* Purple tone */
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-right: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.nav-links a.active {
+  background: #ffffff;
+  color:  #8A2BE2;;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    z-index: 1500;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+}
