@@ -105,7 +105,7 @@ const About = () => {
           </div>
           <div className="team-card">
             {/* <img src="/images/team4.jpg" alt="David" /> */}
-            <h4>Rajesh N</h4>
+            <h4>Avinash N</h4>
             <p>Database Administrator</p>
           </div>
         </div>

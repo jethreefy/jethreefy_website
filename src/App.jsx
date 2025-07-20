@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { Suspense, lazy } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route,HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 // import Footer from "./components/Footer";
 // import SocialIcons from "./components/SocialIcons";
@@ -16,7 +16,7 @@ const GetInvolved = lazy(() => import("./pages/Contact"));
 
 const App = () => {
   return (
-    <Router>
+    <HashRouter>
       <Navbar />
       {/* <SocialIcons /> */}
 
@@ -35,7 +35,7 @@ const App = () => {
       </Suspense>
 
       {/* <Footer /> */}
-    </Router>
+    </HashRouter>
   );
 };
 
