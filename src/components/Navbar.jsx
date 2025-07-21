@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom"; // Import NavLink instead of Link
 import "./Navbar.css";
 import logo from "../assets/jethreefy logo.png";
-// import { FaBars } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -34,13 +34,13 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Menu Icon for Mobile */}
-      {/* {width <= 768 && (
+      {width <= 768 && (
         <FaBars
           className="menu-icon"
           style={{ color: "black" }}
           onClick={() => setMenuOpen(!menuOpen)}
         />
-      )} */}
+      )}
 
       {/* Navigation Links */}
       <ul className={`nav-links ${menuOpen ? "open" : ""}`}>

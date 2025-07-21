@@ -16,11 +16,11 @@ const Contact = () => {
         {/* Contact Form */}
         <div className="contact-form">
           <h2>Send Us a Message</h2>
-          <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Your Message" rows="6" required></textarea>
+           <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="Your Name" required />
+            <input type="email" name="user_email" placeholder="Your Email" required />
+            <input type="text" name="subject" placeholder="Subject" />
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
