@@ -1,5 +1,4 @@
-// src/pages/Contact.jsx
-import React from "react";
+ś
 import "./Contact.css";
 
 const Contact = () => {
@@ -23,7 +22,7 @@ const Contact = () => {
             <textarea placeholder="Your Message" rows="6" required></textarea>
             <button type="submit">Send Message</button>
           </form>
-        </div>
+        </div>ś
 
         {/* Contact Info */}
         <div className="contact-info">
