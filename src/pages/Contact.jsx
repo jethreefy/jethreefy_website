@@ -1,4 +1,3 @@
-ś
 import "./Contact.css";
 
 const Contact = () => {
@@ -22,9 +21,8 @@ const Contact = () => {
             <textarea placeholder="Your Message" rows="6" required></textarea>
             <button type="submit">Send Message</button>
           </form>
-        </div>ś
-
-        {/* Contact Info */}
+        </div>
+        ś{/* Contact Info */}
         <div className="contact-info">
           <div className="mission-box ">
             <h2>Contact Info</h2>
