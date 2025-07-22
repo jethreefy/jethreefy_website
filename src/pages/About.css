@@ -63,7 +63,6 @@
     object-fit: cover;
     /* Keeps the image inside the circle */
     border: 2px solid #ddd;
-    /* Optional border */
 }
 
 .mission-box {
