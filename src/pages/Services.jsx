@@ -23,10 +23,10 @@ const Services = () => {
         </div>
 
         <div className="service-card">
-          <img
-            src="https://wallpaperbat.com/img/832177-full-stack-wallpaper.jpg"
-            alt="Web Development"
-          />
+         <img
+              src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076533_1280.jpg"
+              alt="Web Development"
+            />
           <h3>Web Development</h3>
           <p>
             Build high-performance, responsive websites and web apps with React,

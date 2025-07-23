@@ -1,6 +1,20 @@
+import { Link } from "react-router-dom";
 import "./Contact.css";
-
+import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xeozavqe");
+  if (state.succeeded) {
+    return (
+      <div className="success-message">
+        <h2>✅ Thank you for contacting us!</h2>
+        <p>We’ve received your message and will get back to you shortly.</p>
+        <Link to="/" className="back-home-button">
+          ← Back to Home
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div className="contact-page">
       {/* Header */}
@@ -14,15 +28,29 @@ const Contact = () => {
         {/* Contact Form */}
         <div className="contact-form">
           <h2>Send Us a Message</h2>
-          <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="Your Message" rows="6" required></textarea>
-            <button type="submit">Send Message</button>
+          <form
+            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xeozavqe"
+            method="POST"
+          >
+            <label htmlFor="email">Email Address</label>
+            <input id="email" type="email" name="email" />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            <textarea id="message" name="message" />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            <button type="submit" disabled={state.submitting}>
+              Submit
+            </button>
           </form>
         </div>
-        ś{/* Contact Info */}
         <div className="contact-info">
           <div className="mission-box ">
             <h2>Contact Info</h2>

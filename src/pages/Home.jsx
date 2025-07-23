@@ -73,8 +73,9 @@ const Home = () => {
         <h2>What We Do</h2>
         <div className="feature-cards">
           <div className="card fade-in">
+            {/*  */}
             <img
-              src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076533_1280.jpg"
+              src="https://wallpaperbat.com/img/832177-full-stack-wallpaper.jpg"
               alt="Web Development"
             />
             <h3>Web Development</h3>
@@ -90,8 +91,8 @@ const Home = () => {
           </div>
           <div className="card fade-in" style={{ animationDelay: "0.4s" }}>
             <img
-              src="https://cdn.pixabay.com/photo/2015/06/24/15/45/hands-820272_1280.jpg"
-              alt="Digital"
+              src="https://img.freepik.com/premium-photo/3d-digital-marketing_870512-181.jpg?w=2000"
+              alt="Digital Marketing"
             />
             <h3>Digital Marketing</h3>
             <p>
@@ -99,7 +100,102 @@ const Home = () => {
               SEO, social media, and data-driven digital strategies.
             </p>
           </div>
+          <div className="card fade-in" style={{ animationDelay: "0.4s" }}>
+            <img
+              src="https://adlatworld.com/wp-content/uploads/2020/11/solution-1.jpg"
+              alt="Business Solutions"
+            />
+            <h3>Business Solutions</h3>
+            <p>
+              Optimize operations with custom ERP, CRM, and automation tools
+              tailored to your business goals
+            </p>
+          </div>
         </div>
+      </section>
+      {/* Stats Section */}
+      <section className="stats-section">
+        <div className="stats">
+          <div className="stat">
+            <h2>100+</h2>
+            <p>Projects Delivered</p>
+          </div>
+          <div className="stat">
+            <h2>50+</h2>
+            <p>Happy Clients</p>
+          </div>
+          <div className="stat">
+            <h2>5+</h2>
+            <p>Years Experience</p>
+          </div>
+          <div className="stat">
+            <h2>10+</h2>
+            <p>Industries Served</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Clients / Partners */}
+      <section className="clients">
+        <h2>Trusted by Industry Leaders</h2>
+        <div className="client-logos">
+          <img
+            src="https://www.wikidata.org/static/images/icons/wikidatawiki.svg"
+            alt="Wikidata"
+          />
+          <img
+            src="https://commons.wikimedia.org/static/images/icons/commonswiki.svg"
+            alt="Client 2"
+          />
+          <img
+            src="https://www.mediawiki.org/static/images/icons/mediawikiwiki.svg"
+            alt="Client 3"
+          />
+          <img
+            src="https://en.wikivoyage.org/static/images/icons/wikivoyage.svg"
+            alt="Client 4"
+          />
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="testimonials">
+        <h2>What Our Clients Say</h2>
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          loop={true}
+          pagination={{ clickable: true }}
+          className="testimonial-slider"
+        >
+          <SwiperSlide>
+            <div className="testimonial">
+              <p>
+                “The team delivered exactly what we needed, and ahead of
+                schedule.”
+              </p>
+              {/* <h4>- Sarah, Product Manager at FintechX</h4> */}
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="testimonial">
+              <p>
+                “Reliable, innovative, and professional. Highly recommend their
+                services.”
+              </p>
+              {/* <h4>- Rahul, CTO at Startup India</h4> */}
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </section>
+
+      {/* Call To Action */}
+      <section className="cta-section">
+        <h2>Ready to bring your vision to life?</h2>
+        <p>Let's build something amazing together.</p>
+        <Link to="/contact" className="btn primary">
+          Contact Us
+        </Link>
       </section>
     </div>
   );

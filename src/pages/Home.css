@@ -192,3 +192,105 @@
     border-radius: 5px;
     text-decoration: none;
 }
+
+.stats-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.stat h2 {
+    font-size: 48px;
+    color: #333;
+}
+
+.stat p {
+    font-size: 18px;
+    color: #666;
+}
+
+.clients {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.client-logos img {
+    width: 120px;
+    height: auto;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.client-logos img:hover {
+    opacity: 1;
+}
+
+.testimonials {
+    background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonial-slider {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    font-size: 20px;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.testimonial h4 {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+.cta-section {
+    background: linear-gradient(90deg, #FFFDD0 0%, #8A2BE2 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-section .btn {
+    background: white;
+    color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.cta-section .btn:hover {
+    background: #f0f0f0;
+}
