@@ -2,6 +2,7 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Loader from "./components/Loader";
 // import Footer from "./components/Footer";
 // import SocialIcons from "./components/SocialIcons";
 
@@ -20,7 +21,21 @@ const App = () => {
       <Navbar />
       {/* <SocialIcons /> */}
 
-      <Suspense fallback={<div className="text-center p-4">Loading...</div>}>
+      <Suspense
+        fallback={
+          <div
+            style={{
+              height: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              background: "#ede2e2",
+            }}
+          >
+            <Loader />
+          </div>
+        }
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

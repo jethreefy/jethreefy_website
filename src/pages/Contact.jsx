@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Contact.css";
 import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
-  const [state, handleSubmit] = useForm("xeozavqe");
+  const [state, handleSubmit] = useForm("myzpdegj");
   if (state.succeeded) {
     return (
       <div className="success-message">
@@ -30,7 +30,7 @@ const Contact = () => {
           <h2>Send Us a Message</h2>
           <form
             onSubmit={handleSubmit}
-            action="https://formspree.io/f/xeozavqe"
+            action="https://formspree.io/f/myzpdegj"
             method="POST"
           >
             <label htmlFor="email">Email Address</label>

@@ -1,0 +1,21 @@
+.loader {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #FFFDD0 0%, #8A2BE2 100%);
+    animation: spin 1s linear infinite;
+
+    /* Create a donut shape using mask */
+    mask: radial-gradient(farthest-side, transparent calc(100% - 10px), black calc(100% - 10px));
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), black calc(100% - 10px));
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
